@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+	<div class="container">
+        
+        <div class="box-1">
+            <div class="content-holder">
+                <h2>Hello!</h2>
+                <p>Welcome to Website  </p>
+                <button class="button-1" onclick="signupbtn()">Log in</button>
+                
+            </div>
+        </div>
+
+        
+ 
+        <div class="box-2">
+            <div class="login-form-container">
+                <h1>Signup Form</h1>
+                <input type="text" placeholder="Username" class="input-field">
+                <br><br>
+                <input type="email" placeholder="Email" class="input-field">
+                <br><br>
+                <input type="password" placeholder="Password" class="input-field">
+                <br><br>
+                <button class="login-button" onclick="signupbtn()" type="button">Sign Up</button>
+            </div>
+
+
+        </div>
+
+	<script>
+		function signupbtn(){
+          
+           document.querySelector(".button-1").addEventListener("click",function(){
+            window.location.href="login.html"
+           })
+           alert('you are succesfully register!')
+        }
+        
+        function logbtn()
+        {
+            document.querySelector(".button-1").addEventListener("click",function(){
+                window.localStorage.href="login.html"
+            })
+            
+        }
+      
+	</script>
+</body>
+</html>

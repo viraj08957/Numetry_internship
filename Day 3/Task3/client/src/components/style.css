@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+.login{
+  
+  width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Darker background for container */
+    border: 4px solid #00a6ff; /* Yellow border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
