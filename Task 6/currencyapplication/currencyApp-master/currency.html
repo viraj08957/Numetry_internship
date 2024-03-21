@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/currency.css">
+    <title>Currency App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="currency_container">
+            <div class="selector">
+                <div class="col">
+                    <h4>Choose Currency</H4>
+                    <div class="row">
+                        <select name="currencies" class="currencies" id="fromCur">
+                            <option value="GEL">GEL ₾</option>
+                            <option value="USD">USD $</option>
+                            <option value="EUR">EUR €</option>
+                            <option value="TRY">TRY ₺</option>
+                            <option value="RUB">RUB ₽</option>
+                        </select>
+                        <input class="amount" type="number">
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Convert to</H4>
+                    <div class="row">
+                        <select name="currencies" class="currencies" id="toCur">
+                            <option value="GEL">GEL ₾</option>
+                            <option value="USD">USD $</option>
+                            <option value="EUR">EUR €</option>
+                            <option value="TRY">TRY ₺</option>
+                            <option value="RUB">RUB ₽</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="convertBtn">Convert</button>
+            </div>
+            <div class="result">
+                <div class="error">
+                    <h2>Error</h2>
+                </div>
+                <div class="converted">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="javascript/currency.js"></script>
+</body>
+</html>
