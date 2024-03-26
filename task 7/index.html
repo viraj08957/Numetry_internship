@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatic Parking System</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .parking-slot {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  .parking-slot.booked {
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+<h1>Automatic Parking System</h1>
+<p>Click on a slot to book:</p>
+<div id="parking-area"></div>
+
+<script>
+  const parkingCapacity = 30; // Change this to set the total capacity of parking
+  let bookedSlots = 0;
+
+  // Function to create parking slots dynamically
+  function createParkingSlots() {
+    const parkingArea = document.getElementById('parking-area');
+    for (let i = 1; i <= parkingCapacity; i++) {
+      const slot = document.createElement('div');
+      slot.classList.add('parking-slot');
+      slot.textContent = i;
+      slot.addEventListener('click', () => bookSlot(slot));
+      parkingArea.appendChild(slot);
+    }
+  }
+
+  // Function to book a parking slot
+  function bookSlot(slot) {
+    if (!slot.classList.contains('booked')) {
+      slot.classList.add('booked');
+      bookedSlots++;
+      updateSlotStatus();
+    } else {
+      alert('This slot is already booked.');
+    }
+  }
+
+  // Function to update slot status
+  function updateSlotStatus() {
+    const vacantSlots = parkingCapacity - bookedSlots;
+    alert(`Total slots: ${parkingCapacity}\nBooked slots: ${bookedSlots}\nVacant slots: ${vacantSlots}`);
+  }
+
+  // Initialize parking slots
+  createParkingSlots();
+</script>
+</body>
+</html>
