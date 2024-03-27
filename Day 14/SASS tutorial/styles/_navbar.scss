@@ -6,7 +6,8 @@
   align-items: center;
 }
 
-.navbar {
+.navbar
+{
   background: $light;
   height: 80px;
   display: flex;
@@ -75,4 +76,5 @@
       }
     }
   }
+
 }

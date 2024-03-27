@@ -1,0 +1,17 @@
+sass stands for syntatically awesome style sheet
+it is extension to css 
+browser does not understand sass.so it is translated to css
+
+* why to use sass?
+- it help developer to reduce repetition of css
+-it helps to organize large stylesheet 
+-it make it easy to share design within and across project 
+
+*features of sass 
+-write less do more 
+-it has many amazing featues like variables,nesting,mixins,partials,etc.
+ which help us to wrie and manage stylesheet quickly and easily.
+ 
+-sass support 2 different between sass and scss 
+-intended (.sass extension)
+-scss(.scss extension)
